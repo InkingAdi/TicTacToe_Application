@@ -275,7 +275,7 @@ public class MainActivity extends AppCompatActivity {
             moves_count+=1;
 
             //DRAW
-            if ( moves_count == 9 && !PLAYER_WON) {
+            if ( moves_count > 9 && !PLAYER_WON) {
                 Toast.makeText(this, "Match Drawn !", Toast.LENGTH_LONG).show();
                 reset_button();
             }
